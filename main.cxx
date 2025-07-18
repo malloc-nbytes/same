@@ -10,6 +10,7 @@
 
 #include <forge/arg.h>
 #include "io.hxx"
+#include "flags.hxx"
 
 typedef struct {
     std::string filepath;
@@ -83,13 +84,6 @@ run(const char *dir)
     if (groups.size() == 0) {
         printf("No duplicates found in %s\n", dir);
     }
-}
-
-void
-usage(void)
-{
-    printf("Usage: same <directory>\n");
-    exit(0);
 }
 
 int
